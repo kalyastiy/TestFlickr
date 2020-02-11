@@ -86,28 +86,26 @@
 		32958AA523E7F6BC00D310F7 /* TestFlickr */ = {
 			isa = PBXGroup;
 			children = (
-				32958ACA23E8216C00D310F7 /* Main */,
+				32958ACA23E8216C00D310F7 /* Support files */,
 				32958ACD23E821DC00D310F7 /* Models */,
-				32958AAA23E7F6BC00D310F7 /* ViewController.swift */,
-				32958AC423E81DE800D310F7 /* FlickerAPI.swift */,
-				32958AC623E8205F00D310F7 /* FlickrViewProtocol.swift */,
-				32958AC823E820D900D310F7 /* FlickrPresenter.swift */,
-				32958ACB23E821B200D310F7 /* FlickrPresenterProtocol.swift */,
-				32958AB423E7F6BD00D310F7 /* Info.plist */,
+				32E76B6123F2F88300CA5B2D /* View */,
+				32E76B6223F2F89400CA5B2D /* Presenter */,
+				32E76B6323F2F8BC00CA5B2D /* Helpers */,
 			);
 			path = TestFlickr;
 			sourceTree = "<group>";
 		};
-		32958ACA23E8216C00D310F7 /* Main */ = {
+		32958ACA23E8216C00D310F7 /* Support files */ = {
 			isa = PBXGroup;
 			children = (
+				32958AB423E7F6BD00D310F7 /* Info.plist */,
 				32958AB123E7F6BD00D310F7 /* LaunchScreen.storyboard */,
 				32958AAF23E7F6BD00D310F7 /* Assets.xcassets */,
 				32958AAC23E7F6BC00D310F7 /* Main.storyboard */,
 				32958AA623E7F6BC00D310F7 /* AppDelegate.swift */,
 				32958AC023E8126100D310F7 /* SceneDelegate.swift */,
 			);
-			path = Main;
+			path = "Support files";
 			sourceTree = "<group>";
 		};
 		32958ACD23E821DC00D310F7 /* Models */ = {
@@ -117,6 +115,32 @@
 				32958AC223E818A300D310F7 /* FlickrPhoto.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		32E76B6123F2F88300CA5B2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32958AC623E8205F00D310F7 /* FlickrViewProtocol.swift */,
+				32958AAA23E7F6BC00D310F7 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32E76B6223F2F89400CA5B2D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				32958ACB23E821B200D310F7 /* FlickrPresenterProtocol.swift */,
+				32958AC823E820D900D310F7 /* FlickrPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		32E76B6323F2F8BC00CA5B2D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				32958AC423E81DE800D310F7 /* FlickerAPI.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DB22085C10E5D7F5881871A8 /* Pods */ = {
@@ -399,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A45865HREW;
-				INFOPLIST_FILE = TestFlickr/Info.plist;
+				INFOPLIST_FILE = "TestFlickr/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,7 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A45865HREW;
-				INFOPLIST_FILE = TestFlickr/Info.plist;
+				INFOPLIST_FILE = "TestFlickr/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
